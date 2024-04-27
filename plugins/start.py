@@ -125,7 +125,7 @@ async def start_command(client: Client, message: Message):
                     pass
 
             SD = await message.reply_text("Baka! Files will be deleted After 600 seconds. Save them to the Saved Message now!")
-            await asyncio.sleep(600)
+            await asyncio.sleep(60)
 
             for snt_msg in snt_msgs:
                 try:
