@@ -124,7 +124,7 @@ async def start_command(client: Client, message: Message):
                 except:
                     pass
 
-            SD = await message.reply_text("This message is deleted in 20 mins to avoid copyrights. Save the link to Somewhere else")
+            SD = await message.reply_text("Files will be deleted After 10 mins to avoid copyrights. Save the link to Somewhere else")
             await asyncio.sleep(600)
 
             for snt_msg in snt_msgs:
@@ -164,7 +164,7 @@ async def start_command(client: Client, message: Message):
                     [InlineKeyboardButton("Refresh Token", url=link)],
                     [InlineKeyboardButton('How to use the bot', url=TUT_VID)]
                 ]
-                await message.reply(f"Your Authentication token is expired, refresh your token and try again.\n\nToken Timeout: {get_exp_time(VERIFY_EXPIRE)}\n\nWhat is the token?\n\nThis is an authentication token. If you pass 1 Token, you can use the bot for 24 Hour after passing the authentication token.", reply_markup=InlineKeyboardMarkup(btn), protect_content=False, quote=True)
+                await message.reply("🖐HEY THERE.\n\n🌟YOU'RE NOT VERIFIED TODAY , PLEASE VERIFY AND GET UNLIMITED ACCES TILL NEXT VERIFICATION", reply_markup=InlineKeyboardMarkup(btn), protect_content=False, quote=True)
 
 
 WAIT_MSG = "<b>ᴡᴏʀᴋɪɴɢ....</b>"
