@@ -161,8 +161,8 @@ async def start_command(client: Client, message: Message):
                 await update_verify_status(id, verify_token=token, link="")
                 link = await get_shortlink(SHORTLINK_URL, SHORTLINK_API,f'https://telegram.dog/{client.username}?start=verify_{token}')
                 btn = [
-                    [InlineKeyboardButton("Refresh Token", url=link)],
-                    [InlineKeyboardButton('How to use the bot', url=TUT_VID)]
+                    [InlineKeyboardButton("♻️𝑪𝑳𝑰𝑪𝑲 𝑯𝑬𝑹𝑬 𝑻𝑶 𝑽𝑬𝑹𝑰𝑭𝒀♻️", url=link)],
+                    [InlineKeyboardButton('⁉️ 𝑯𝑶𝑾 𝑻𝑶 𝑽𝑬𝑹𝑰𝑭𝒀 ⁉️', url=TUT_VID)]
                 ]
                 await message.reply("🖐𝗛𝗘𝗬 𝗧𝗛𝗘𝗥𝗘
 .\n\n🌟𝗬𝗢𝗨'𝗥𝗘 𝗡𝗢𝗧 𝗩𝗘𝗥𝗜𝗙𝗜𝗘𝗗 𝗧𝗢𝗗𝗔𝗬 , 𝗣𝗟𝗘𝗔𝗦𝗘 𝗩𝗘𝗥𝗜𝗙𝗬 𝗔𝗡𝗗 𝗚𝗘𝗧 𝗨𝗡𝗟𝗜𝗠𝗜𝗧𝗘𝗗 𝗔𝗖𝗖𝗘𝗦 𝗧𝗜𝗟𝗟 𝗡𝗘𝗫𝗧 𝗩𝗘𝗥𝗜𝗙𝗜𝗖𝗔𝗧𝗜𝗢𝗡", reply_markup=InlineKeyboardMarkup(btn), protect_content=False, quote=True)
