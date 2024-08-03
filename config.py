@@ -42,7 +42,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 # my shortner https://dashboard.shareus.io/signup/lifetime/U9AZbV
 
 SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "publicearn.com")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "1ce70b68da51365d070e5d4b9c35f82bf64546b5")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "9cf7ecb5b4707087b91bf1262b76d97e5417ffa0")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 43200)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
 TUT_VID = os.environ.get("TUT_VID","gojfsi/2")
