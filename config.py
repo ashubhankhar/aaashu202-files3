@@ -1,8 +1,3 @@
-#(©)CodeXBotz
-#By @Codeflix_Bots
-
-
-
 import os
 import logging
 from logging.handlers import RotatingFileHandler
@@ -10,26 +5,26 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6865560319:AAESUxZdVMm0EPgBtKhp80DUpYPundt36KI")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "23681812"))
+APP_ID = int(os.environ.get("APP_ID", "22505271"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "3152d0cda0a21787db0c924f522374b7")
+API_HASH = os.environ.get("API_HASH", "c89a94fcfda4bc06524d0903977fc81e")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001883654211"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002075726565"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6710996831"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6695586027"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://ashubot:ashubot@cluster0.q3x8qbk.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Cluster0:Cluster0@cluster0.c07xkuf.mongodb.net/?retryWrites=true&w=majority")
+DB_NAME = os.environ.get("DATABASE_NAME", "Cluster01")
 
 #force sub channel id, if you want enable force sub
 FORCESUB_CHANNEL = int(os.environ.get("FORCESUB_CHANNEL", "0"))
