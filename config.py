@@ -43,7 +43,7 @@ IS_VERIFY = os.environ.get("IS_VERIFY", "True")
 TUT_VID = os.environ.get("TUT_VID","gojfsi/2")
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>🥰𝐇𝐄𝐋𝐋𝐎 {first}\n\n 🍀𝗜 𝗔𝗠 𝗠𝗨𝗟𝗧𝗜𝗙𝗜𝗟𝗘 𝗦𝗧𝗢𝗥𝗘 𝗕𝗢𝗧 , 𝗜 𝗖𝗔𝗡 𝗦𝗧𝗢𝗥𝗘 𝗙𝗜𝗟𝗘𝗦 𝗜𝗡 𝗦𝗣𝗘𝗖𝗜𝗙𝗜𝗘𝗗 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 𝗔𝗡𝗗 𝗢𝗧𝗛𝗘𝗥 𝗨𝗦𝗘𝗥𝗦 𝗖𝗔𝗡 𝗔𝗖𝗖𝗘𝗦 𝗜𝗧 𝗕𝗬 𝗦𝗣𝗘𝗖𝗜𝗔𝗟 𝗟𝗜𝗡𝗞 » </b>")
+START_MSG = os.environ.get("START_MESSAGE", "START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[6695586027]
     for x in (os.environ.get("ADMINS", "6695586027").split()):
