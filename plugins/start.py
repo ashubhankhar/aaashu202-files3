@@ -160,11 +160,11 @@ async def start_command(client: Client, message: Message):
                 token = ''.join(random.choices(string.ascii_letters + string.digits, k=10))
                 await update_verify_status(id, verify_token=token, link="")
                 link = await get_shortlink(SHORTLINK_URL, SHORTLINK_API,f'https://telegram.dog/{client.username}?start=verify_{token}')
-               btn = [
-                  [InlineKeyboardButton("Click here to Continue", url=link)],
-                    [InlineKeyboardButton('Verification Tutorial', url=TUT_VID)]
+                btn = [
+                    [InlineKeyboardButton("♻️Click here to Continue♻️", url=link)],
+                    [InlineKeyboardButton('⁉️ Verification Tutorial ⁉️', url=TUT_VID)]
                 ]
-                await message.reply(f"Your Ads token is expired, refresh your token and try again.\n\nToken Timeout: 24 Hours\n\nWhat is the token?\n\nThis is an ads token. If you pass 1 ad, you can use the bot for 24 Hour after passing the ad.", reply_markup=InlineKeyboardMarkup(btn), protect_content=False, quote=True)
+                await message.reply("Your Ads token is expired, refresh your token and try again.\n\nToken Timeout: 24 Hours\n\nWhat is the token?\n\nThis is an ads token. If you pass 1 ad, you can use the bot for 24 Hour after passing the ad.", reply_markup=InlineKeyboardMarkup(btn), protect_content=False, quote=True)
 
 
 WAIT_MSG = "<b>ᴡᴏʀᴋɪɴɢ....</b>"
