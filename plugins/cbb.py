@@ -1,4 +1,4 @@
-# btn : about and close change here
+#ultroidofficial : YT
 
 from pyrogram import __version__
 from bot import Bot
@@ -9,18 +9,19 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
-        await query.message.edit_text(
-            text = f"<b>○ ᴏᴡɴᴇʀ : <a href='tg://user?id={OWNER_ID}'>ᴍɪᴋᴇʏ</a>\n○ ᴍʏ ᴜᴘᴅᴀᴛᴇs : <a href='https://t.me/+sfULM9lM02Q2ZmI9'>Channel</a>\n○ Dramafilez : <a href='https://t.me/Dramafilez'>Dramafilez</a>\n○ ᴏᴜʀ ᴄᴏᴍᴍᴜɴɪᴛʏ : <a href='https://t.me/+0NFO_tCu91NhYjJl'>Chat</a></b>",
-            disable_web_page_preview = True,
-            reply_markup = InlineKeyboardMarkup(
-                [
+        new_text = f"<b>○ Creator : <a href='tg://user?id={OWNER_ID}'>This Person</a>\n○ Language : <code>Python3</code>\n○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>\n○ Support Group :  <a href='https://t.me/+5dYQcJbrLkRmODJl'>Click here</a>\n○ Channel : @Dramafilez </b>"
+        if query.message.text != new_text:
+            await query.message.edit_text(
+                text=new_text,
+                disable_web_page_preview=True,
+                reply_markup=InlineKeyboardMarkup(
                     [
-                        InlineKeyboardButton("⚡️ ᴄʟᴏsᴇ", callback_data = "close"),
-                        InlineKeyboardButton('🍁 Youtube', url='')
+                        [
+                            InlineKeyboardButton("🔒 Close", callback_data="close")
+                        ]
                     ]
-                ]
+                )
             )
-        )
     elif data == "close":
         await query.message.delete()
         try:
